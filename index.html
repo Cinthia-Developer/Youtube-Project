@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Project</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <img src="image/menu-youtube.png" class="menu" alt="menú">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="image/options.png" class="options" alt="opciones">
+            </div><!--cierre de col-md-2-->
+            <div class="col-md-10">
+                <h4><b>Recomendado</b></h4>
+                <ul>
+                    <li class="videos"></li>
+                </ul>
+                <h4><b>Tendencias</b></h4>
+                <ul>
+                    <li class="videos_2"></li>
+                </ul>
+                <h4><b>Subidos Recientemente</b></h4>
+                <ul>
+                    <li class="videos_3"></li>
+                </ul>
+            </div><!--cierre de col-md-10-->
+        </div><!--cierre de row-->
+    </div><!--cierre de container fluid-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        
+        <script type="text/livescript">
+            $(document).ready(function(){
+                $(".videos").youtube(["VqEbCxg2bNI", "GMFewiplIbw", "T7VewKI44rQ", "o1zcAQt4tBc", "t_jHrUE5IOk"]);
+                $(".videos_2").youtube(["WtVRAqTCYek", "Nsqrfu-4rLE", "P-MxBG-q0fI", "0Y_s9LClvmw", "fuOfyCiY-sk"]);
+                $(".videos_3").youtube(["EAOSM5-g83E", "Y1HHBXDL9bg", "YUG2-avqArU", "qcZ2Id41nBE", "mS6nH5Js09U"]);
+            });
+        </script>
+</body>
+</html>
