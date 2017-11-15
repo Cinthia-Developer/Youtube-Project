@@ -5,7 +5,7 @@ $.fn.youtube = function(listaVideo){
             let url = 'https://www.youtube.com/embed/' + listaVideo[i];
             
             let $cont_video = $(contVideo);
-            $cont_video.attr("src",url);
+            $cont_video.attr("src", url);
             $cont_video.css("width", "20%");
             $cont_video.css("height", "150px");
             $cont_video.css("padding", "5px");
